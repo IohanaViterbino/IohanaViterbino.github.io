@@ -1,17 +1,29 @@
+@font-face {
+    font-family: minhaFonte;
+    src: url(/projeto2/fonts/GhiboTalk.otf);
+}
+
 *{
     margin: 0px;
     padding: 0px;
-    background-color: blue;
+    background-color: #010FEB;
 }
 
 .menuItem{
     background-color: #008EE0;
-    padding: 10px;
-    margin: 5px;
-    border: 5px solid #0047E0;
+    padding: 5px;
+    margin: 0px;
+    border: 0px solid #0047E0;
     color: #FFFFFF;
+    width: 25%;
+    text-align: center;
+    font-family: Roboto;
 }
 
-.sectReturn{
-    color: yellow;
+.newFont{
+    font-size: 40px;
+    color: #a8ff99;
+    font-family: minhaFonte;
+    letter-spacing: 2px;
+    word-spacing: 15px;
 }
