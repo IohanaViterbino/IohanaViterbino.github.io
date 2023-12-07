@@ -1,0 +1,35 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.menuItem{
+    margin: 5px;
+    border: 0px solid #0047E0;
+    color: #FFFFFF;
+    width: 10%;
+    display: inline;
+    font-family: Roboto;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: #FFFFFF;
+}
+
+a:visited{
+    color: #FFFFFF;
+}
+
+a:hover{
+    background-color: #FFFFFF;
+    color: #0047E0;
+}
+
+nav{
+    background-color: #008EE0;
+}
