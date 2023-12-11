@@ -6,6 +6,7 @@
 
 .sectHeader{
     background-color: #008EE0;
+    width: 100vw;
     height: 60px;
     display: flex;
     align-items: center;
@@ -14,7 +15,7 @@
 
 .menuItem{
     margin: 5px;
-    border: 0px solid #0047E0;
+    border: none;
     color: #FFFFFF;
     display: inline;
     font-family: Roboto;
@@ -22,11 +23,20 @@
     text-transform: capitalize;
 }
 
+.sect-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+.sectClasses{
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
 .image-gallery{
     width: 200px;
-    margin: 15px;
+    margin: 5px;
     border: 1px solid #7E7E9E;
-    float: left;
 }
 
 .text-desc{

@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-container{
+    background-color: antiquewhite;
+    width: 100vw;
+    float: left;
+}
+.quad1{
+    background-color: aquamarine;
+    width: 20%;
+    height: 80px;
+    float: left;
+}
+
+.quad2{
+    background-color: burlywood;
+    width: 80%;
+    height: 80px;
+    float: left;
+}
+
+.menu-header{
+    float: right;
+    transform: translateY(150%);
+}
+
+.content{
+    float: none;
+    width: 100vw;
+    height: 500px;
+    background-color: aqua;
+}
+
+.footer{
+    width: 100vw;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+
+nav > p{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: #000;
+}
+
+a:visited{
+    color: #000;
+}
+
+a:hover{
+    text-decoration: underline;
+}
