@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --corPrincipal: #EBAC3F;
+    --corSecundaria: #6B6252;
+    --corTerciaria: #3FC8EB;
+    --corAnimacao: #52576B;
+}
+
+h1{
+    font-family: Roboto, Calibri;
+    color: var(--corTerciaria);
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--corSecundaria);
+}
+
+.header-logotipo{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 4;
+    height: 10vh;
+}
+
+a{
+    text-decoration: none;
+    margin: 0 1vw 0 1vw;
+    font-size:larger;
+}
+
+a:link{
+    color: var(--corTerciaria);
+}
+
+a:visited{
+    color: var(--corTerciaria);
+}
+
+a:hover{
+    text-decoration: underline;
+}
