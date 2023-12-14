@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+}
+
+:root{
+    --corPrincipal: #161d86;
+    --corSecundaria: #ffe4c4;
+    --corTerciaria: #665240;
+    --corAnimacao: #52576B;
+}
+
+/* Header */
+.header-container{
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    background-color: var(--corSecundaria);
+    height: 10vh;
+    align-items: center;
+}
+
+.header-cont{
+    margin: 0 1vw 0 3vw;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.home{
+    grid-column: 1/2;
+    text-align: end;
+}
+.proj{
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.cont{
+    grid-column: 3/4;
+}
+
+h1{
+    font-family: Roboto, Calibri;
+    color: var(--corPrincipal);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: var(--corPrincipal);
+}
+
+a:visited{
+    color: var(--corPrincipal);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Main */
+
+.aboutMe{
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    align-items: center;
+}
+
+.title{
+    grid-column: 1/2;
+    align-self: end;
+    justify-self: center;
+}
+
+.paragraph{
+    grid-column: 1/2;
+    align-self: start;
+    justify-self: end;
+}
+
+.img{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: center;
+}

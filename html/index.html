@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="images/neoAzul.png">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="icon" type="image/x-icon" href="images/neoAzul.png">
+    <link rel="stylesheet" type="text/css" href="/css/styleGrid.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Iohana</title>
+    <title>Grid</title>
 </head>
 <body>
-    <header class="sectHeader">
-        <nav>
-            <p class="menuItem"><a href="#">Página Inicial</a></p>
-            <p class="menuItem"><a href="#">Projetos</a></p>
-            <p class="menuItem"><a href="#">Contato</a></p>
+    <header class="header-container">
+        <div class="header-cont logotipo">
+            <h1>IoIo</h1>
+        </div>
+        <nav class="header-cont menu">
+            <p class="menuItem home"><a href="#">Página Inicial</a></p>
+            <p class="menuItem proj"><a href="#">Projetos</a></p>
+            <p class="menuItem cont"><a href="#">Contato</a></p>
         </nav>
     </header>
-    <main class="sectMain">
-        <h1>Aulas</h1>
-        <div class="sect-gallery">
-            <div class="image-gallery">
-                <a target="_blank" href="https://github.com/IohanaViterbino/ContestLink"><img src="images/3.png" alt="Logo ContestLink com boneco azul"></a>
-                <p class="text-desc">Projeto de desenvolvimento em grupo</p>
-            </div>
-
-            <div class="image-gallery">
-                <a target="_blank" href="designPage/index.html"><img src="images/design_modelo_page.png"></a>
-                <p class="text-desc">Desing alternativo em construção</p>
-            </div>
-        </div> 
+    <main class="main-container">
+        <div class="aboutMe">
+            <h1 class="about title">Eu sou <span>Iohana Maria</span></h1>
+            <p class="about paragraph">Estudante de desenvolvimento de sistemas no Senac</p>
+            <img src="/images/eu_desenho.png" class="about img">
+        </div>
     </main>
-</body>
 </html>
