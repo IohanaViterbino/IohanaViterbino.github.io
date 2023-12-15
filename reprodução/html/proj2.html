@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela 2</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        :root{
+            --cortexto: #000;
+            --corimg: #F5A26E;
+            --cornav: #A0D28D;
+            --cortextocampo: #83C667;
+            --corback: #eeeeee;
+        }
+        .content{
+            display: grid;
+            margin: 5vw;
+            gap: 5vh;
+        }
+        
+        .img-rosa{
+            background-color: var(--corimg);
+            width: 90vw;
+            height: 70vh;
+        }
+
+        nav{
+            background-color: var(--cornav);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 90vw;
+            height: 5vh;
+        }
+        .item-nav1{
+            flex-grow: 1;
+            text-align: end;
+        }
+        .item-nav2{
+            flex-grow: 1;
+            text-align: center;
+        }
+        .item-nav3{
+            flex-grow: 1;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        a:link{
+            color: var(--cortexto);
+        }
+
+        a:visited{
+            color: var(--cortexto);
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img class="img-rosa" src="/images/F5A26E.png">
+        <nav>
+            <p class="item-nav1"><a href="#">N1</a></p>
+            <p class="item-nav2"><a href="#">N2</a></p>
+            <p class="item-nav3"><a href="#">N3</a></p>
+        </nav>
+    </div>
+</body>
+</html>

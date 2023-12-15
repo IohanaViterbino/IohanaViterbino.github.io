@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela 4</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        :root{
+            --cortexto: #000;
+            --corimg: #F5A26E;
+            --cornav: #A0D28D;
+            --cortextocampo: #83C667;
+            --corback: #eeeeee;
+        }
+
+        .content{
+            display: grid;
+            grid-template-columns: 70vw 30vw;
+            height: 100vh;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .img-rigth{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 20vw;
+        }
+
+        .img-left{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            width: 60vw;
+            height: 30vh;
+        }
+
+        .texts{
+            display: grid;
+            width: 60vw;
+            gap: 25px;
+        }
+        .tex{
+            background-color: var(--cortextocampo);
+            height: 4vh;
+        }
+
+        .navP{
+            display: grid;
+            gap: 10px;
+        }
+        
+        nav{
+            background-color: var(--cornav);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 20vw;
+        }
+        .item-nav{
+            padding: 1vw;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:link{
+            color: var(--cortexto);
+        }
+
+        a:visited{
+            color: var(--cortexto);
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+        
+        .navPP{
+            background-color: var(--cortextocampo);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img class="cont img-rigth" src="/images/F5A26E.png">
+        
+        <div class="cont texts">
+            <p class="tex p1">oi</p>
+            <p class="tex p2">bom</p>
+            <p class="tex p3">dia</p>
+            <p class="tex p4">tchau</p>
+            <p class="tex p5">boa</p>
+            <p class="tex p6">noite</p>
+        </div>
+        
+        <img class="cont img-left" src="/images/F5A26E.png">
+        
+        <div class="cont navP">
+            <nav>
+                <p class="navP item-nav"><a href="#">N1</a></p>
+                <p class="navP item-nav"><a href="#">N2</a></p>
+                <p class="navP item-nav"><a href="#">N3</a></p>
+            </nav>
+            <p class="navP navPP">salud!</p>
+            <p class="navP navPP">asta la vista!</p>
+        </div>
+        
+    </div>
+</body>
+</html>
