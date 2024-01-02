@@ -78,12 +78,12 @@ header{
     margin: 5rem  15rem;
 }
 
-#apresentacao-main >h1{
+#apresentacao-main >h2{
     font-size: 40px;
     color: var(--corTexto);
 }
 
-#apresentacao-main >h2{
+#apresentacao-main >h3{
     font-size: 90px;
     text-decoration: underline;
     color: var(--corTexto);
