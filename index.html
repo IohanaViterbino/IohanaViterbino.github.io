@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="icon" type="image/x-icon" href="images/neoAzul.png">
-    <link rel="stylesheet" type="text/css" href="css/styleGrid.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Grid</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">    
+    <title>Portifólio</title>
 </head>
 <body>
-    <header class="header-container">
-        <div class="header-cont logotipo">
+    <header id="header-container">
+        <div id="logo-header">
             <h1>IoIo</h1>
         </div>
-        <nav class="header-cont menu">
-            <p class="menuItem home"><a href="#">Página Inicial</a></p>
-            <p class="menuItem proj"><a href="#">Projetos</a></p>
-            <p class="menuItem cont"><a href="#">Contato</a></p>
-        </nav>
+        <i class="fa-solid fa-bars"></i>
+        <div id="menu-header">
+            <nav id="menu-nav">
+                <ul>
+                <li class="menu-item"><a href="#">home</a></li>
+                <li class="menu-item"><a href="#">skills</a></li>
+                <li class="menu-item"><a href="#">projects</a></li>
+                <li class="menu-item"><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main-container">
-        <div class="aboutMe">
-            <h1 class="about title">Eu sou <span>Iohana Maria</span></h1>
-            <p class="about paragraph">Estudante de desenvolvimento de sistemas no Senac</p>
-            <img src="/images/eu_desenho.png" class="about img">
+        <div class="cont-main about">
+            <div id="apresentacao-main">
+                <h1>Oi, eu sou</h1>
+                <h2>Iohana Maria</h2>
+                <p>Estudante de desenvolvimento de sistemas no Senac.</p>
+                <button id="btn-sobre">about me</button>
+            </div>
         </div>
     </main>
 </html>

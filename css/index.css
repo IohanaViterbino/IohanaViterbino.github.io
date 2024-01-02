@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+
+:root{
+    --corPrincipal: #3A4154;
+    --corSecundaria: #303647;
+    --corTerciaria: #282F42;
+    --corTexto: #FFFFFF;
+    --corLegenda: #C9C9C9;
+    --corBotao: #4D4D4D;
+}
+
+/* header */
+header{
+    overflow: hidden;
+}
+
+#header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--corSecundaria);
+}
+
+#logo-header{
+    flex-grow: 2;
+}
+
+#logo-header h1{
+    color: var(--corTexto);
+    font-size: 64px;
+    text-align: center;
+    margin-left: 5vw;
+}
+
+#menu-header{
+    flex-grow: 4;
+}
+
+#menu-nav{
+    text-align: center;
+}
+
+#menu-nav > ul >li{
+    display: inline-block;
+    margin-right: 5vw;
+    text-transform: capitalize;
+}
+
+#menu-nav > ul >li >a{
+    text-decoration: none;
+    color: var(--corTexto);
+}
+
+#menu-nav > ul >li >a:hover{
+    text-decoration: underline;
+}
+
+/* main */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--corTerciaria);
+    height: 34vw;
+}
+
+#apresentacao-main{
+    margin: 5rem  15rem;
+}
+
+#apresentacao-main >h1{
+    font-size: 40px;
+    color: var(--corTexto);
+}
+
+#apresentacao-main >h2{
+    font-size: 90px;
+    text-decoration: underline;
+    color: var(--corTexto);
+}
+
+#apresentacao-main >p{
+    width: 350px;
+    text-align: left;
+    margin-top: 2vh;
+    font-size: 16px;
+    color: var(--corLegenda);
+}
+
+#apresentacao-main >button{
+    background-color: var(--corTexto);
+    border: 0 solid var(--corTexto);
+    border-radius: 25px;
+    margin-top: 8vh;
+    width: 180px;
+    height: 48px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--corBotao);
+}
+
+#apresentacao-main >button:hover{
+    text-decoration: underline;
+    box-shadow: 5px 5px 25px #000;
+}
+
+/* responsividade */
+
+@media(max-width: 720px){
+    /* header */
+    #menu-nav > ul >li{
+        margin-right: 2vw;
+    }
+    #logo-header{
+        flex-grow: 3;
+    }
+}
+
+@media(max-width: 480px){
+    /* header */
+    #menu-header{
+        display: none;
+    }
+}
