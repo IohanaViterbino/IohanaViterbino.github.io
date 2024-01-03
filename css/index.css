@@ -32,7 +32,8 @@ header{
 
 #logo-header h1{
     color: var(--corTexto);
-    font-size: 64px;
+    font-size: 4rem;
+    font-weight: bold;
     text-align: center;
     margin-left: 5vw;
 }
@@ -52,12 +53,14 @@ header{
 }
 
 #menu-nav > ul >li >a{
+    font-size: 1rem;
     text-decoration: none;
     color: var(--corTexto);
 }
 
 #menu-nav > ul >li >a:hover{
     text-decoration: underline;
+    font: 1.25rem sans-serif;
 }
 
 /* main */
@@ -71,7 +74,7 @@ header{
     display: flex;
     flex-direction: column;
     background-color: var(--corTerciaria);
-    height: 34vw;
+    height: 80vh;
 }
 
 #apresentacao-main{
@@ -79,32 +82,41 @@ header{
 }
 
 #apresentacao-main >h2{
-    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
     color: var(--corTexto);
 }
 
 #apresentacao-main >h3{
-    font-size: 90px;
+    font-size: 5.63rem;
+    font-weight: 700;
     text-decoration: underline;
     color: var(--corTexto);
 }
 
+#apresentacao-main h3:hover{
+    text-decoration: none;
+    font-size: 6rem;
+}
+
 #apresentacao-main >p{
-    width: 350px;
-    text-align: left;
     margin-top: 2vh;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 21.88rem;
+    text-align: left;
     color: var(--corLegenda);
 }
+
 
 #apresentacao-main >button{
     background-color: var(--corTexto);
     border: 0 solid var(--corTexto);
-    border-radius: 25px;
+    border-radius: 1.56rem;
     margin-top: 8vh;
-    width: 180px;
-    height: 48px;
-    font-size: 16px;
+    width: 11.25rem;
+    height: 3rem;
+    font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
     color: var(--corBotao);
@@ -112,10 +124,13 @@ header{
 
 #apresentacao-main >button:hover{
     text-decoration: underline;
-    box-shadow: 5px 5px 25px #000;
+    box-shadow: 0.3rem 0.3rem 1.56rem #000;
+    width: 12rem;
+    height: 3.5rem;
 }
 
 /* responsividade */
+/*ajustar responsividade do main apartir do 1040px*/
 
 @media(max-width: 720px){
     /* header */
