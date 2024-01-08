@@ -26,6 +26,7 @@ function attList() {
         btnexc.textContent = "excluir";
         btnedit.textContent = "editar";
         
+        item.setAttribute("class", "task");
         btnexc.setAttribute("onclick", `remove(${index})`);
         btnedit.setAttribute("onclick", `edit(${index})`);
         
@@ -97,6 +98,7 @@ function searchTask() {
             btnexc.textContent = "excluir";
             btnedit.textContent = "editar";
             
+            item.setAttribute("class", "task");
             btnexc.setAttribute("onclick", `remove(${i})`);
             btnedit.setAttribute("onclick", `edit(${i})`);
             

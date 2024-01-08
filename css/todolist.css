@@ -115,6 +115,9 @@ main{
     text-transform: capitalize;
 }
 
+/* organizar a linha da lista em grid, para os botões e paragrafo
+.task{} */
+
 #filtertask{
     display: flex;
     flex-direction: column;
