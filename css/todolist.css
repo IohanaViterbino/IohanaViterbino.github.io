@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Roboto';
+}
+
+:root{
+    --corinput: #464646;
+    --corbackPopout: #212127;
+    --corText: #eeeeee;
+    --corcontraste: #4EF54F;
+}
+
+/* body */
+body{
+    background-color: var(--corcontraste);
+}
+
+main{
+    display: flex;
+    flex-direction: column;     
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.to-do{
+    display: flex;
+    flex-direction: column;
+    border: 0rem;
+    border-radius: 0.5rem;
+    width: 40vw;
+    min-height: 90vh;
+    background-color: var(--corbackPopout);
+    box-sizing: content-box;
+    transition: 0.3s;
+}
+
+.to-do:hover{
+    box-shadow: 0rem 0rem 1rem #18181d;
+}
+
+/* input task*/
+.input-task{
+    margin: 1.5rem 3rem;
+    transition: 0.3s;
+}
+
+.input-task h1{
+    margin: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--corText);
+}
+
+.input-task input{
+    min-height: 2.5rem;
+    width: 85%;
+    background-color: var(--corinput);
+    color: var(--corText);
+    border: 0rem;
+    border-radius: 0.25rem;
+    padding-left: 1rem;
+    transition: 0.3s;
+    font-size: 0.85rem;    
+}
+
+#newtask:hover{
+    box-shadow: 0rem 0rem 1rem #18181d;
+}
+
+.input-task button{
+    height: 2.5rem;
+    width: 10%;
+    color: var(--corcontraste);
+    background-color: var(--corinput);
+    border: 0rem;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+}
+
+#btn-add-task:hover{
+    background-color: var(--corText);
+    color: var(--corinput);
+}
+
+/* task list */
+
+.task-list {
+    margin: 0.75rem 3rem;
+}
+
+#todotask{
+    list-style: none;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--corText);
+}
