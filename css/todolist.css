@@ -49,6 +49,8 @@ main{
 
 .input-task h1{
     margin: 1.5rem;
+    font-weight: 700;
+    font-size: 2rem;
     text-align: center;
     text-transform: capitalize;
     color: var(--corText);
@@ -56,7 +58,7 @@ main{
 
 .input-task input{
     min-height: 2.5rem;
-    width: 85%;
+    width: 70%;
     background-color: var(--corinput);
     color: var(--corText);
     border: 0rem;
@@ -89,11 +91,46 @@ main{
 
 .task-list {
     margin: 0.75rem 3rem;
+    padding: 0rem 0rem 2rem 0rem;
+    color: var(--corText);
 }
 
 #todotask{
+    display: flex;
+    flex-direction: column;
     list-style: none;
     line-height: 2.5rem;
     font-size: 1.2rem;
     color: var(--corText);
+}
+
+#todotask button{
+    width: 40%;
+    height: 2.5rem;
+    color: var(--corcontraste);
+    background-color: var(--corinput);
+    border: 0rem;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+
+#filtertask{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--corText);
+}
+
+#filtertask button{
+    width: 40%;
+    height: 2.5rem;
+    color: var(--corcontraste);
+    background-color: var(--corinput);
+    border: 0rem;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+    text-transform: capitalize;
 }
