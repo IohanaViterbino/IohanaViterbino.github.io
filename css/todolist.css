@@ -8,6 +8,7 @@
 
 :root{
     --corinput: #464646;
+    --corlist: #272b27;
     --corbackPopout: #212127;
     --corText: #eeeeee;
     --corcontraste: #4EF54F;
@@ -70,6 +71,7 @@ main{
 
 #newtask:hover{
     box-shadow: 0rem 0rem 1rem #18181d;
+    background-color: #5c5c5c;
 }
 
 .input-task button{
@@ -80,6 +82,7 @@ main{
     border: 0rem;
     border-radius: 0.2rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 #btn-add-task:hover{
@@ -88,10 +91,8 @@ main{
 }
 
 /* task list */
-
 .task-list {
     margin: 0.75rem 3rem;
-    padding: 0rem 0rem 2rem 0rem;
     color: var(--corText);
 }
 
@@ -104,31 +105,41 @@ main{
     color: var(--corText);
 }
 
-#todotask button{
-    width: 40%;
-    height: 2.5rem;
-    color: var(--corcontraste);
-    background-color: var(--corinput);
-    border: 0rem;
-    border-radius: 0.2rem;
-    transition: 0.3s;
-    text-transform: capitalize;
-}
-
-/* organizar a linha da lista em grid, para os botões e paragrafo
-.task{} */
-
 #filtertask{
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
     list-style: none;
     line-height: 2.5rem;
     font-size: 1.2rem;
     color: var(--corText);
 }
 
-#filtertask button{
-    width: 40%;
+#filtertask li{
+    background-color: var(--corlist);
+    border-radius: 0.5rem;
+}
+
+/* item task */
+.task{
+    display: grid;
+    grid-template-columns: 60% auto auto;
+    padding: 0.5rem;
+    transition: 0.3s;
+    border-radius: 0.5rem;
+}
+
+.task:hover{
+    box-shadow: 0rem 0rem 0.5rem var(--corcontraste);
+}
+
+.task p{
+    grid-column: 1/2;
+    word-wrap: break-word;
+}
+
+.task button{
+    width: 80%;
     height: 2.5rem;
     color: var(--corcontraste);
     background-color: var(--corinput);
@@ -136,4 +147,30 @@ main{
     border-radius: 0.2rem;
     transition: 0.3s;
     text-transform: capitalize;
+    cursor: pointer;
+}
+
+.task button:hover{
+    background-color: var(--corText);
+    color: var(--corinput);
+}
+
+/* footer */
+
+footer{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: 900;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(163, 18, 4);
 }

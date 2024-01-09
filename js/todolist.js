@@ -101,7 +101,8 @@ function searchTask() {
             item.setAttribute("class", "task");
             btnexc.setAttribute("onclick", `remove(${i})`);
             btnedit.setAttribute("onclick", `edit(${i})`);
-            
+            list.setAttribute("style", "flex");
+
             item.appendChild(txtitem);
             item.appendChild(btnexc);
             item.appendChild(btnedit);
